@@ -30,6 +30,7 @@ steps:
       - -c
       - |
         gcloud run deploy helloworld-empathy --image=us-central1-docker.pkg.dev/${PROJECT_ID}/${_REPO_NAME}/helloworld-empathy --region us-central1 --platform managed >> /workspace/output.txt
+
   # TODO: Get Cloud Run URL
   - id: "Read Values"
     name: ubuntu
